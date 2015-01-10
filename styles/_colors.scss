@@ -1,0 +1,40 @@
+// $blue: #00ADEF;
+// $green: #A8FC00;
+// $pink: #F6008B;
+// $orange: #FF8500;
+$blue: #2BAAE1;
+$green: #ADD036;
+$pink: #EC168A;
+$orange: #F5851F;
+
+$colors: (
+	pink: #EC168A,
+	green: #ADD036,
+	orange: #F5851F,
+	blue: #2BAAE1
+);
+
+@each $colorName, $color in $colors {
+    .#{$colorName} {
+       color: $color;
+    }
+
+    .#{$colorName}-bg {
+       background-color: $color;
+    }
+}
+
+.color {
+	&:nth-of-type(1) {
+		color: map-get($colors, 'pink');
+	}
+	&:nth-of-type(2) {
+		color: map-get($colors, 'green');
+	}
+	&:nth-of-type(3) {
+		color: map-get($colors, 'orange');
+	}
+	&:nth-of-type(4) {
+		color: map-get($colors, 'blue');
+	}
+}

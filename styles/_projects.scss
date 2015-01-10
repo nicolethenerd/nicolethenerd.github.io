@@ -1,0 +1,23 @@
+.projects {
+	display: none;
+
+	color: $pink;
+
+	h1, h2, h3 {
+	    font-weight: 100;
+	}
+
+	h2 {
+		font-size: 14pt;
+		font-weight: bold;
+		margin:  0;
+	}
+
+	.project {
+		background: rgba($pink, .25);
+		border: $pink 4px solid;
+		padding: 20px;
+
+		line-height: 1.2em;
+	}
+}
