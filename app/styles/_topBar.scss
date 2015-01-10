@@ -1,0 +1,26 @@
+.top-bar, .top-bar-next {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6px;
+
+    // -webkit-transition: width 3s;
+    // -o-transition: width 3s;
+    // transition: width 3s;  
+}
+
+.top-bar {
+    width: 100%;
+}
+
+.top-bar-next {
+	width: 0%;
+}
+
+.behind {
+	z-index: 0;
+}
+
+.in-front {
+	z-index: 1;
+}
