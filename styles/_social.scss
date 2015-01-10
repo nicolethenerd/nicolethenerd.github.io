@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+.social {
+		position: fixed;
+		top: 14px;
+		right: 10px;
+}
+
+
+.symbol {
+    font-size: 36px;
+    display: block;
+    
+    margin-bottom: 0.3em;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+
+    // &:nth-child(1)
+    // {
+    // 	margin-right: 0;
+    // }
+}
+
+@media all and (min-width: 500px)
+{
+	
+
+	.symbol {
+		display: inline-block;
+	}
+}
