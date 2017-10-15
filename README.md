@@ -1,2 +1,2 @@
-# nbieber.github.io
+# nicolethenerd.github.io
 homepage
